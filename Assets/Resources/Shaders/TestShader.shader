@@ -1,11 +1,9 @@
-﻿// (c) 2018 Guidev
-// This code is licensed under MIT license (see LICENSE.txt for details)
-
-Shader "Unlit/TestShader"
+﻿Shader "Unlit/TestShader"
 {
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
+		[Enum(CompareFunction)] _StencilComp("Stencil Comp", Int) = 3
 	}
 	SubShader
 	{
@@ -14,6 +12,12 @@ Shader "Unlit/TestShader"
 
 		Pass
 		{
+			Stencil
+			{
+				Ref 1
+				Comp [_StencilComp]
+			}
+			
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
