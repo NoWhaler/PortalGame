@@ -8,9 +8,9 @@ namespace Game
         [SerializeField] private Transform _cameraOffsetTransform;
 
         [SerializeField] private LayerMask _layerMask;
-        public float maxRaycastDistance = 0.25f;
+        public float maxRaycastDistance;
 
-        void Update()
+        private void Update()
         {
             Ray ray = new Ray(_cameraTransform.position, _cameraTransform.forward);
             RaycastHit hit;
@@ -19,8 +19,6 @@ namespace Game
             {
                 if (hit.collider != null)
                 {
-                    Debug.Log("Hit");
-                    
                     _cameraTransform.position = hit.point;
                     _cameraOffsetTransform.position = hit.point;
                 }

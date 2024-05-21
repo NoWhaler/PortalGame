@@ -26,9 +26,9 @@ namespace Game
         
         private void SetPortalMaterialsStencil(CompareFunction compareFunction)
         {
-            for (int i = 0; i < _portalMaterials.Length; i++)
+            foreach (var material in _portalMaterials)
             {
-                _portalMaterials[i].SetInt(STENCIL, (int)compareFunction);
+                material.SetInt(STENCIL, (int)compareFunction);
             }
         }
 
@@ -44,8 +44,6 @@ namespace Game
         private void OnTriggerExit(Collider other)
         {
             Vector3 cameraPositionInPortal = transform.InverseTransformPoint(_mainCamera.transform.position);
-            
-            Debug.Log(cameraPositionInPortal);
             
             if (cameraPositionInPortal.y > 3.0f)
             {

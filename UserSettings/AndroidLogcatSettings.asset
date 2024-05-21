@@ -1,25 +1,13 @@
 {
     "m_SelectedDeviceId": "R58R35BECEY",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "R58R35BECEY",
+        "name": "com.DefaultCompany.PortalGame",
+        "processId": 14147,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "R58R35BECEY",
-            "name": "com.DefaultCompany.PortalGame",
-            "processId": 11972,
-            "exited": true
-        },
-        {
-            "deviceId": "R58R35BECEY",
-            "name": "com.DefaultCompany.PortalGame",
-            "processId": 12608,
-            "exited": true
-        },
         {
             "deviceId": "R58R35BECEY",
             "name": "com.sec.android.app.launcher",
@@ -29,14 +17,32 @@
         {
             "deviceId": "R58R35BECEY",
             "name": "com.DefaultCompany.PortalGame",
-            "processId": 13113,
+            "processId": 3107,
             "exited": true
         },
         {
             "deviceId": "R58R35BECEY",
             "name": "com.DefaultCompany.PortalGame",
-            "processId": 14195,
+            "processId": 9679,
             "exited": true
+        },
+        {
+            "deviceId": "R58R35BECEY",
+            "name": "com.DefaultCompany.PortalGame",
+            "processId": 11082,
+            "exited": true
+        },
+        {
+            "deviceId": "R58R35BECEY",
+            "name": "com.DefaultCompany.PortalGame",
+            "processId": 12029,
+            "exited": true
+        },
+        {
+            "deviceId": "R58R35BECEY",
+            "name": "com.DefaultCompany.PortalGame",
+            "processId": 14147,
+            "exited": false
         }
     ],
     "m_Tags": {
